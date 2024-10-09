@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #ff7613;
+  --text-color: #727171;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: black;
+  color: white;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.deskripsi {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.tittle {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  padding: 5rem;
+  background: #070707;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    grid-template-columns: 1fr;
+    padding: 3rem;
+    gap: 7rem;
+  }
+}
+
+.profil {
+  grid-column: 1 / -1;
+  margin-bottom: 2rem;
+}
+
+.grup {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.profil_container {
+  display: flex;
+  gap: 2rem;
+}
+
+.profil_img {
+  max-width: 250px;
+}
+
+.nama_depan {
+  color: white;
+  font-weight: 200;
+  font-size: clamp(2rem, 8vw, 4rem);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: -0.8rem;
+}
+
+.nama_belakang {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: clamp(2.5rem, 15vw, 7rem);
+  text-transform: uppercase;
+  display: block;
+}
+
+.tittle_profil {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.tombol_download {
+  display: block;
+  text-decoration: underline;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}
+
+.tombol_download:hover {
+  color: var(--primary-color);
+}
+
+@media only screen and (max-width: 768px) {
+  .profil_container {
+    flex-direction: column;
+  }
+}
+
+.skill_list {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  line-height: 2;
+}
+
+.tentang_item {
+  margin-top: 2rem;
+}
+
+.tentang_nama {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.pengalaman_item {
+  margin-top: 2rem;
+}
+
+.pengalaman_nama {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
