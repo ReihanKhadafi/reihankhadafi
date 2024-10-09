@@ -46,7 +46,7 @@ a {
   max-width: 1000px;
   width: 90%;
   margin: 0 auto;
-  display: flex;
+  display: grid;
   padding: 5rem;
   background: #070707;
   grid-template-columns: 1fr 1fr;
